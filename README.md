@@ -49,3 +49,11 @@ This exercise should not be incredibly complex or time consuming. If this was no
 ### Limitation
 - During the time limitation, I skip the `unit-tests` part
 - Each time navigate to the row (out of screen), we do `reloadData` of the `collectionView`. In the case, the `CollectionView` contains tons of cells, the performance will be decreased.
+
+### How to deploy
+```
+git clone git@github.com:chipbk10/ShowMusicApp.git
+cd ShowMusicApp
+pod install
+open ShowMusicApp.xcworkspace
+```
