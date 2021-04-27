@@ -24,3 +24,28 @@ Create a single page application that downloads and displays the user's playlist
 
 ## Misc
 This exercise should not be incredibly complex or time consuming. If this was not the case, or the instructions were not clear, please provide feedback.
+
+## Solution
+
+### UICollectionView inside UITableViewCell
+- Embed UICollectionView inside UITableViewCell to achieve the expected UI (horizontally scrollable albums && vertically scrollable playlists)
+- Scroll from top bar down to refresh the data
+- Show a loading indicator during loading time
+- Show an Error alert if something wrong happens (due to networking failed, or invalid json, or bad request, etc.)
+
+### Cache Images
+- cache images for faster populating images in UICollectionViewCell
+- caching policy: If the cache goes over the limit (set default value to 50 images), it may remove objects instantly
+
+### Architecture
+- Using `MVVM` for this demo app
+- Project is organized into different components (UI, ViewModel, Services, Model, Utils, DI, etc.) 
+
+### Simple helper functions
+- `Box` to achieve simple `react`'s purpose (using getter && setter)
+- `SwiftyJSON` to parse `JSON` in a convenient way
+- `Builder` to achieve simple `Dependencies Injections`'s purpose
+
+### Limitation
+- During the time limitation, I skip the `unit-tests` part
+- Each time navigate to the row (out of screen), we do `reloadData` of the `collectionView`. In the case, the `CollectionView` contains tons of cells, the performance will be decreased.
