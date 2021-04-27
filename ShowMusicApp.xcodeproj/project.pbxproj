@@ -1,0 +1,872 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		457FC23D40F909D3935037C8 /* Pods_ShowMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D15CD3C0A6D20B7C90DEE3 /* Pods_ShowMusicAppTests.framework */; };
+		57ADCD5026371082007474A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD4F26371082007474A8 /* AppDelegate.swift */; };
+		57ADCD5226371082007474A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD5126371082007474A8 /* SceneDelegate.swift */; };
+		57ADCD5426371082007474A8 /* ShowMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD5326371082007474A8 /* ShowMusicViewController.swift */; };
+		57ADCD5726371082007474A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ADCD5526371082007474A8 /* Main.storyboard */; };
+		57ADCD5926371084007474A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57ADCD5826371084007474A8 /* Assets.xcassets */; };
+		57ADCD5C26371084007474A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57ADCD5A26371084007474A8 /* LaunchScreen.storyboard */; };
+		57ADCD6726371084007474A8 /* ShowMusicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD6626371084007474A8 /* ShowMusicAppTests.swift */; };
+		57ADCD7226371084007474A8 /* ShowMusicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD7126371084007474A8 /* ShowMusicAppUITests.swift */; };
+		57ADCD91263741ED007474A8 /* ShowMusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD90263741ED007474A8 /* ShowMusicViewModel.swift */; };
+		57ADCDA126375D74007474A8 /* MusicDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDA026375D74007474A8 /* MusicDataProvider.swift */; };
+		57ADCDA926375DD4007474A8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDA826375DD4007474A8 /* Album.swift */; };
+		57ADCDAE263761F6007474A8 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDAD263761F6007474A8 /* NetworkError.swift */; };
+		57ADCDB32637683D007474A8 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDB22637683D007474A8 /* Playlist.swift */; };
+		57ADCDB8263768F4007474A8 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDB7263768F4007474A8 /* MusicData.swift */; };
+		57ADCDC726376E29007474A8 /* MusicDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDC626376E29007474A8 /* MusicDataParser.swift */; };
+		57ADCDCF26377B7A007474A8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDCE26377B7A007474A8 /* Builder.swift */; };
+		57FD0EA22637888400DC5226 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EA12637888400DC5226 /* Box.swift */; };
+		57FD0EAA2637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */; };
+		57FD0EAF2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */; };
+		57FD0EB42637957100DC5226 /* ShowMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EB32637957100DC5226 /* ShowMusicCollectionViewCell.swift */; };
+		57FD0EB9263797A700DC5226 /* ShowMusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EB8263797A700DC5226 /* ShowMusicTableViewCell.swift */; };
+		57FD0EBE2637AC5000DC5226 /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EBD2637AC5000DC5226 /* ImageProvider.swift */; };
+		6B676780055081812CE52A62 /* Pods_ShowMusicApp_ShowMusicAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B6C504ED50DED24A3CC3AA /* Pods_ShowMusicApp_ShowMusicAppUITests.framework */; };
+		6F0307A6B64466EE8BC3F79B /* Pods_ShowMusicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 509D9B8792E0FF5D7382CD74 /* Pods_ShowMusicApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57ADCD6326371084007474A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57ADCD4426371081007474A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57ADCD4B26371082007474A8;
+			remoteInfo = ShowMusicApp;
+		};
+		57ADCD6E26371084007474A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57ADCD4426371081007474A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57ADCD4B26371082007474A8;
+			remoteInfo = ShowMusicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07D15CD3C0A6D20B7C90DEE3 /* Pods_ShowMusicAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMusicAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13DFC2EA7DFFCEA33D40113C /* Pods-ShowMusicAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ShowMusicAppTests/Pods-ShowMusicAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2454279E7EE4BB77D88E0C71 /* Pods-ShowMusicAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicAppTests.release.xcconfig"; path = "Target Support Files/Pods-ShowMusicAppTests/Pods-ShowMusicAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		3E3F05C8CB4B7115093C475B /* Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C675489D6BEF46C7C762A5B /* Pods-ShowMusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp.debug.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		509D9B8792E0FF5D7382CD74 /* Pods_ShowMusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADCD4C26371082007474A8 /* ShowMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADCD4F26371082007474A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57ADCD5126371082007474A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		57ADCD5326371082007474A8 /* ShowMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicViewController.swift; sourceTree = "<group>"; };
+		57ADCD5626371082007474A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57ADCD5826371084007474A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57ADCD5B26371084007474A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		57ADCD5D26371084007474A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ADCD6226371084007474A8 /* ShowMusicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowMusicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADCD6626371084007474A8 /* ShowMusicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicAppTests.swift; sourceTree = "<group>"; };
+		57ADCD6826371084007474A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ADCD6D26371084007474A8 /* ShowMusicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowMusicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ADCD7126371084007474A8 /* ShowMusicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicAppUITests.swift; sourceTree = "<group>"; };
+		57ADCD7326371084007474A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57ADCD90263741ED007474A8 /* ShowMusicViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicViewModel.swift; sourceTree = "<group>"; };
+		57ADCDA026375D74007474A8 /* MusicDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataProvider.swift; sourceTree = "<group>"; };
+		57ADCDA826375DD4007474A8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		57ADCDAD263761F6007474A8 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		57ADCDB22637683D007474A8 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		57ADCDB7263768F4007474A8 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
+		57ADCDC626376E29007474A8 /* MusicDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataParser.swift; sourceTree = "<group>"; };
+		57ADCDCE26377B7A007474A8 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		57FD0EA12637888400DC5226 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
+		57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		57FD0EB32637957100DC5226 /* ShowMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		57FD0EB8263797A700DC5226 /* ShowMusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMusicTableViewCell.swift; sourceTree = "<group>"; };
+		57FD0EBD2637AC5000DC5226 /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		A81412D4062F9780203C2312 /* Pods-ShowMusicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp.release.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp.release.xcconfig"; sourceTree = "<group>"; };
+		C6B6C504ED50DED24A3CC3AA /* Pods_ShowMusicApp_ShowMusicAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMusicApp_ShowMusicAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E86A7B6F62F2616CCC26DA /* Pods-ShowMusicApp-ShowMusicAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp-ShowMusicAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57ADCD4926371082007474A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0307A6B64466EE8BC3F79B /* Pods_ShowMusicApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD5F26371084007474A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				457FC23D40F909D3935037C8 /* Pods_ShowMusicAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD6A26371084007474A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B676780055081812CE52A62 /* Pods_ShowMusicApp_ShowMusicAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57ADCD4326371081007474A8 = {
+			isa = PBXGroup;
+			children = (
+				57ADCD4E26371082007474A8 /* ShowMusicApp */,
+				57ADCD6526371084007474A8 /* ShowMusicAppTests */,
+				57ADCD7026371084007474A8 /* ShowMusicAppUITests */,
+				57ADCD4D26371082007474A8 /* Products */,
+				E5D5923938367AF65EFFBDD0 /* Pods */,
+				94B22D5A235DC3DE3F8C0D89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57ADCD4D26371082007474A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD4C26371082007474A8 /* ShowMusicApp.app */,
+				57ADCD6226371084007474A8 /* ShowMusicAppTests.xctest */,
+				57ADCD6D26371084007474A8 /* ShowMusicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57ADCD4E26371082007474A8 /* ShowMusicApp */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD8D26374128007474A8 /* Main */,
+				57ADCD98263746F1007474A8 /* DI */,
+				57ADCD8E2637416B007474A8 /* UI */,
+				57ADCD8F263741C9007474A8 /* ViewModel */,
+				57ADCD9F26375D4F007474A8 /* Model */,
+				57ADCDD626377D94007474A8 /* Services */,
+				57FD0EA02637883700DC5226 /* Utils */,
+				57ADCD5826371084007474A8 /* Assets.xcassets */,
+				57ADCD5D26371084007474A8 /* Info.plist */,
+			);
+			path = ShowMusicApp;
+			sourceTree = "<group>";
+		};
+		57ADCD6526371084007474A8 /* ShowMusicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD6626371084007474A8 /* ShowMusicAppTests.swift */,
+				57ADCD6826371084007474A8 /* Info.plist */,
+			);
+			path = ShowMusicAppTests;
+			sourceTree = "<group>";
+		};
+		57ADCD7026371084007474A8 /* ShowMusicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD7126371084007474A8 /* ShowMusicAppUITests.swift */,
+				57ADCD7326371084007474A8 /* Info.plist */,
+			);
+			path = ShowMusicAppUITests;
+			sourceTree = "<group>";
+		};
+		57ADCD8D26374128007474A8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD4F26371082007474A8 /* AppDelegate.swift */,
+				57ADCD5126371082007474A8 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		57ADCD8E2637416B007474A8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCDD726377DDB007474A8 /* StoryBoards */,
+				57ADCD5326371082007474A8 /* ShowMusicViewController.swift */,
+				57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */,
+				57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */,
+				57FD0EB32637957100DC5226 /* ShowMusicCollectionViewCell.swift */,
+				57FD0EB8263797A700DC5226 /* ShowMusicTableViewCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		57ADCD8F263741C9007474A8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD90263741ED007474A8 /* ShowMusicViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57ADCD98263746F1007474A8 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCDCE26377B7A007474A8 /* Builder.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		57ADCD9F26375D4F007474A8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCDA826375DD4007474A8 /* Album.swift */,
+				57ADCDAD263761F6007474A8 /* NetworkError.swift */,
+				57ADCDB22637683D007474A8 /* Playlist.swift */,
+				57ADCDB7263768F4007474A8 /* MusicData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57ADCDD626377D94007474A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCDA026375D74007474A8 /* MusicDataProvider.swift */,
+				57ADCDC626376E29007474A8 /* MusicDataParser.swift */,
+				57FD0EBD2637AC5000DC5226 /* ImageProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		57ADCDD726377DDB007474A8 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD5526371082007474A8 /* Main.storyboard */,
+				57ADCD5A26371084007474A8 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		57FD0EA02637883700DC5226 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				57FD0EA12637888400DC5226 /* Box.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		94B22D5A235DC3DE3F8C0D89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				509D9B8792E0FF5D7382CD74 /* Pods_ShowMusicApp.framework */,
+				C6B6C504ED50DED24A3CC3AA /* Pods_ShowMusicApp_ShowMusicAppUITests.framework */,
+				07D15CD3C0A6D20B7C90DEE3 /* Pods_ShowMusicAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5D5923938367AF65EFFBDD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4C675489D6BEF46C7C762A5B /* Pods-ShowMusicApp.debug.xcconfig */,
+				A81412D4062F9780203C2312 /* Pods-ShowMusicApp.release.xcconfig */,
+				3E3F05C8CB4B7115093C475B /* Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig */,
+				D2E86A7B6F62F2616CCC26DA /* Pods-ShowMusicApp-ShowMusicAppUITests.release.xcconfig */,
+				13DFC2EA7DFFCEA33D40113C /* Pods-ShowMusicAppTests.debug.xcconfig */,
+				2454279E7EE4BB77D88E0C71 /* Pods-ShowMusicAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57ADCD4B26371082007474A8 /* ShowMusicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ADCD7626371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicApp" */;
+			buildPhases = (
+				5AEE14345924C393D459F842 /* [CP] Check Pods Manifest.lock */,
+				57ADCD4826371082007474A8 /* Sources */,
+				57ADCD4926371082007474A8 /* Frameworks */,
+				57ADCD4A26371082007474A8 /* Resources */,
+				BF3C39E26B1C5CDD30CC2B26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShowMusicApp;
+			productName = ShowMusicApp;
+			productReference = 57ADCD4C26371082007474A8 /* ShowMusicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57ADCD6126371084007474A8 /* ShowMusicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ADCD7926371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicAppTests" */;
+			buildPhases = (
+				88DB80B42E367231C92BA100 /* [CP] Check Pods Manifest.lock */,
+				57ADCD5E26371084007474A8 /* Sources */,
+				57ADCD5F26371084007474A8 /* Frameworks */,
+				57ADCD6026371084007474A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57ADCD6426371084007474A8 /* PBXTargetDependency */,
+			);
+			name = ShowMusicAppTests;
+			productName = ShowMusicAppTests;
+			productReference = 57ADCD6226371084007474A8 /* ShowMusicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		57ADCD6C26371084007474A8 /* ShowMusicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57ADCD7C26371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicAppUITests" */;
+			buildPhases = (
+				813AB7467AAE491AE1BE844D /* [CP] Check Pods Manifest.lock */,
+				57ADCD6926371084007474A8 /* Sources */,
+				57ADCD6A26371084007474A8 /* Frameworks */,
+				57ADCD6B26371084007474A8 /* Resources */,
+				75C694E8D8A1CC2828971EEE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57ADCD6F26371084007474A8 /* PBXTargetDependency */,
+			);
+			name = ShowMusicAppUITests;
+			productName = ShowMusicAppUITests;
+			productReference = 57ADCD6D26371084007474A8 /* ShowMusicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57ADCD4426371081007474A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					57ADCD4B26371082007474A8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					57ADCD6126371084007474A8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 57ADCD4B26371082007474A8;
+					};
+					57ADCD6C26371084007474A8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 57ADCD4B26371082007474A8;
+					};
+				};
+			};
+			buildConfigurationList = 57ADCD4726371081007474A8 /* Build configuration list for PBXProject "ShowMusicApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57ADCD4326371081007474A8;
+			productRefGroup = 57ADCD4D26371082007474A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57ADCD4B26371082007474A8 /* ShowMusicApp */,
+				57ADCD6126371084007474A8 /* ShowMusicAppTests */,
+				57ADCD6C26371084007474A8 /* ShowMusicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57ADCD4A26371082007474A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADCD5C26371084007474A8 /* LaunchScreen.storyboard in Resources */,
+				57ADCD5926371084007474A8 /* Assets.xcassets in Resources */,
+				57ADCD5726371082007474A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD6026371084007474A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD6B26371084007474A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AEE14345924C393D459F842 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowMusicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75C694E8D8A1CC2828971EEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813AB7467AAE491AE1BE844D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowMusicApp-ShowMusicAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DB80B42E367231C92BA100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShowMusicAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF3C39E26B1C5CDD30CC2B26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57ADCD4826371082007474A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADCDA126375D74007474A8 /* MusicDataProvider.swift in Sources */,
+				57FD0EAA2637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift in Sources */,
+				57ADCDAE263761F6007474A8 /* NetworkError.swift in Sources */,
+				57FD0EAF2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift in Sources */,
+				57ADCD5426371082007474A8 /* ShowMusicViewController.swift in Sources */,
+				57ADCDCF26377B7A007474A8 /* Builder.swift in Sources */,
+				57ADCDB32637683D007474A8 /* Playlist.swift in Sources */,
+				57ADCD5026371082007474A8 /* AppDelegate.swift in Sources */,
+				57ADCDB8263768F4007474A8 /* MusicData.swift in Sources */,
+				57ADCDC726376E29007474A8 /* MusicDataParser.swift in Sources */,
+				57FD0EB42637957100DC5226 /* ShowMusicCollectionViewCell.swift in Sources */,
+				57FD0EBE2637AC5000DC5226 /* ImageProvider.swift in Sources */,
+				57ADCD91263741ED007474A8 /* ShowMusicViewModel.swift in Sources */,
+				57FD0EB9263797A700DC5226 /* ShowMusicTableViewCell.swift in Sources */,
+				57FD0EA22637888400DC5226 /* Box.swift in Sources */,
+				57ADCD5226371082007474A8 /* SceneDelegate.swift in Sources */,
+				57ADCDA926375DD4007474A8 /* Album.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD5E26371084007474A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADCD6726371084007474A8 /* ShowMusicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57ADCD6926371084007474A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57ADCD7226371084007474A8 /* ShowMusicAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57ADCD6426371084007474A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57ADCD4B26371082007474A8 /* ShowMusicApp */;
+			targetProxy = 57ADCD6326371084007474A8 /* PBXContainerItemProxy */;
+		};
+		57ADCD6F26371084007474A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57ADCD4B26371082007474A8 /* ShowMusicApp */;
+			targetProxy = 57ADCD6E26371084007474A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57ADCD5526371082007474A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57ADCD5626371082007474A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57ADCD5A26371084007474A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57ADCD5B26371084007474A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57ADCD7426371084007474A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57ADCD7526371084007474A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57ADCD7726371084007474A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C675489D6BEF46C7C762A5B /* Pods-ShowMusicApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57ADCD7826371084007474A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A81412D4062F9780203C2312 /* Pods-ShowMusicApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		57ADCD7A26371084007474A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13DFC2EA7DFFCEA33D40113C /* Pods-ShowMusicAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowMusicApp.app/ShowMusicApp";
+			};
+			name = Debug;
+		};
+		57ADCD7B26371084007474A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2454279E7EE4BB77D88E0C71 /* Pods-ShowMusicAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShowMusicApp.app/ShowMusicApp";
+			};
+			name = Release;
+		};
+		57ADCD7D26371084007474A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3F05C8CB4B7115093C475B /* Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShowMusicApp;
+			};
+			name = Debug;
+		};
+		57ADCD7E26371084007474A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2E86A7B6F62F2616CCC26DA /* Pods-ShowMusicApp-ShowMusicAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CCD5ARSN66;
+				INFOPLIST_FILE = ShowMusicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = chipbk10.ShowMusicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShowMusicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57ADCD4726371081007474A8 /* Build configuration list for PBXProject "ShowMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ADCD7426371084007474A8 /* Debug */,
+				57ADCD7526371084007474A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ADCD7626371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ADCD7726371084007474A8 /* Debug */,
+				57ADCD7826371084007474A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ADCD7926371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ADCD7A26371084007474A8 /* Debug */,
+				57ADCD7B26371084007474A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57ADCD7C26371084007474A8 /* Build configuration list for PBXNativeTarget "ShowMusicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57ADCD7D26371084007474A8 /* Debug */,
+				57ADCD7E26371084007474A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57ADCD4426371081007474A8 /* Project object */;
+}
