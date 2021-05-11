@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		457FC23D40F909D3935037C8 /* Pods_ShowMusicAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D15CD3C0A6D20B7C90DEE3 /* Pods_ShowMusicAppTests.framework */; };
+		575FE504263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FE503263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift */; };
+		575FE509263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575FE508263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift */; };
 		57ADCD5026371082007474A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD4F26371082007474A8 /* AppDelegate.swift */; };
 		57ADCD5226371082007474A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD5126371082007474A8 /* SceneDelegate.swift */; };
 		57ADCD5426371082007474A8 /* ShowMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCD5326371082007474A8 /* ShowMusicViewController.swift */; };
@@ -58,6 +60,8 @@
 		3E3F05C8CB4B7115093C475B /* Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp-ShowMusicAppUITests/Pods-ShowMusicApp-ShowMusicAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C675489D6BEF46C7C762A5B /* Pods-ShowMusicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShowMusicApp.debug.xcconfig"; path = "Target Support Files/Pods-ShowMusicApp/Pods-ShowMusicApp.debug.xcconfig"; sourceTree = "<group>"; };
 		509D9B8792E0FF5D7382CD74 /* Pods_ShowMusicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShowMusicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575FE503263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UITableViewDataSourcePrefetching.swift"; sourceTree = "<group>"; };
+		575FE508263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift"; sourceTree = "<group>"; };
 		57ADCD4C26371082007474A8 /* ShowMusicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShowMusicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57ADCD4F26371082007474A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57ADCD5126371082007474A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +123,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575FE513263D8EBA0021F57F /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */,
+				575FE503263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift */,
+				57FD0EB8263797A700DC5226 /* ShowMusicTableViewCell.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		575FE514263D8EF40021F57F /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */,
+				575FE508263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift */,
+				57FD0EB32637957100DC5226 /* ShowMusicCollectionViewCell.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		575FE515263D8F290021F57F /* ShowMusic */ = {
+			isa = PBXGroup;
+			children = (
+				57ADCD5326371082007474A8 /* ShowMusicViewController.swift */,
+				575FE513263D8EBA0021F57F /* UITableView */,
+				575FE514263D8EF40021F57F /* UICollectionView */,
+			);
+			path = ShowMusic;
+			sourceTree = "<group>";
+		};
 		57ADCD4326371081007474A8 = {
 			isa = PBXGroup;
 			children = (
@@ -188,11 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				57ADCDD726377DDB007474A8 /* StoryBoards */,
-				57ADCD5326371082007474A8 /* ShowMusicViewController.swift */,
-				57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */,
-				57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */,
-				57FD0EB32637957100DC5226 /* ShowMusicCollectionViewCell.swift */,
-				57FD0EB8263797A700DC5226 /* ShowMusicTableViewCell.swift */,
+				575FE515263D8F290021F57F /* ShowMusic */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -522,8 +552,10 @@
 				57ADCD5026371082007474A8 /* AppDelegate.swift in Sources */,
 				57ADCDB8263768F4007474A8 /* MusicData.swift in Sources */,
 				57ADCDC726376E29007474A8 /* MusicDataParser.swift in Sources */,
+				575FE504263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift in Sources */,
 				57FD0EB42637957100DC5226 /* ShowMusicCollectionViewCell.swift in Sources */,
 				57FD0EBE2637AC5000DC5226 /* ImageProvider.swift in Sources */,
+				575FE509263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift in Sources */,
 				57ADCD91263741ED007474A8 /* ShowMusicViewModel.swift in Sources */,
 				57FD0EB9263797A700DC5226 /* ShowMusicTableViewCell.swift in Sources */,
 				57FD0EA22637888400DC5226 /* Box.swift in Sources */,

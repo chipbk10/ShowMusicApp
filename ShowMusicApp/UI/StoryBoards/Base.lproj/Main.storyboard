@@ -74,6 +74,7 @@
                                             </cells>
                                             <connections>
                                                 <outlet property="dataSource" destination="4qG-Ov-6wX" id="Kxq-6E-rnC"/>
+                                                <outlet property="prefetchDataSource" destination="4qG-Ov-6wX" id="Vnx-NS-YsH"/>
                                             </connections>
                                         </collectionView>
                                     </subviews>
@@ -92,6 +93,7 @@
                         <connections>
                             <outlet property="dataSource" destination="4qG-Ov-6wX" id="8M1-aL-2SJ"/>
                             <outlet property="delegate" destination="4qG-Ov-6wX" id="VRN-ji-0tt"/>
+                            <outlet property="prefetchDataSource" destination="4qG-Ov-6wX" id="UOs-Aw-PDx"/>
                         </connections>
                     </tableView>
                 </tableViewController>
