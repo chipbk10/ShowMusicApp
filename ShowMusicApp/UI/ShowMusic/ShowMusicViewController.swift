@@ -66,13 +66,9 @@ class ShowMusicViewController: UITableViewController {
     
     private func reloadTableView() {
         
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            self?.viewModel?.reloadData(completion: { success in
-                DispatchQueue.main.async {
-                    if (success)    { self?.tableView.reloadData() }
-                    else            { self?.showError() }
-                }
-            })
+        viewModel?.reloadData{ [weak self] success in
+            if (success)    { self?.tableView.reloadData() }
+            else            { self?.showError() }
         }
     }
     

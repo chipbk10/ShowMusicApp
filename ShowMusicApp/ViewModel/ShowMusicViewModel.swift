@@ -97,9 +97,9 @@ extension ShowMusicViewModel {
         fetchAlbumImageData(albumIndex: albumIndex, completion: completion)
     }
     
-    private func fetchAlbumImageData(albumIndex index: Int, completion: @escaping (UIImage?) -> Void) {
+    private func fetchAlbumImageData(resultQueue: DispatchQueue = .main, albumIndex index: Int, completion: @escaping (UIImage?) -> Void) {
         let imageUrl = albums![index].imageUrl
-        imageProvider.fetch(urlString: imageUrl) { result in
+        imageProvider.fetch(resultQueue: resultQueue, urlString: imageUrl) { result in
             switch result {
             
             case .success(let imageData):

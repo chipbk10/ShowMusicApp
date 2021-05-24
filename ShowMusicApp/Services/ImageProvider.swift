@@ -8,29 +8,41 @@
 import UIKit
 
 protocol IImageProvider {
-    func fetch(urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void)
+    func fetch(resultQueue: DispatchQueue, urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void)
 }
 
 class ImageProvider: IImageProvider {
     
-    func fetch(urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void) {
+    fileprivate let networkSession: INetworkSession
+    
+    init(networkSession: INetworkSession) {
+        self.networkSession = networkSession
+    }
+    
+    func fetch(resultQueue: DispatchQueue, urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void) {
         
         guard let url = URL(string: urlString) else {
-            completion(.failure(.badURL))
+            resultQueue.async {
+                completion(.failure(.badURL))
+            }
             return
         }
         
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
+        networkSession.load(with: url) { (data, error) in
+            var result: Result<UIImage, NetworkError>
             if error != nil {
-                completion(.failure(.requestFailed))
+                result = .failure(.requestFailed)
             }
             else if let imageData = data, let image = UIImage(data: imageData) {
-                completion(.success(image))
+                result = .success(image)
             }
             else {
-                completion(.failure(.invalidData))
+                result = .failure(.invalidData)
             }
-        }.resume()
+            resultQueue.async {
+                completion(result)
+            }
+        }
     }
 }
 
@@ -45,11 +57,11 @@ class CachedImageProvider: IImageProvider {
         self.cache.countLimit = limit
     }
     
-    func fetch(urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void) {
+    func fetch(resultQueue: DispatchQueue, urlString: String, completion: @escaping (Result<UIImage, NetworkError>) -> Void) {
         let key = urlString as NSString
         
         guard let image = cache.object(forKey: key) else {
-            imageProvider.fetch(urlString: urlString) { [weak self] result in
+            imageProvider.fetch(resultQueue: resultQueue, urlString: urlString) { [weak self] result in
                 switch result {
                 case .success(let image):
                     self?.cache.setObject(image, forKey: key)

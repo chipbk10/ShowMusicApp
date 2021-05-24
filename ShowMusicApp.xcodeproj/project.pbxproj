@@ -26,6 +26,7 @@
 		57ADCDB8263768F4007474A8 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDB7263768F4007474A8 /* MusicData.swift */; };
 		57ADCDC726376E29007474A8 /* MusicDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDC626376E29007474A8 /* MusicDataParser.swift */; };
 		57ADCDCF26377B7A007474A8 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57ADCDCE26377B7A007474A8 /* Builder.swift */; };
+		57C36751265BE3F200F49A49 /* NetworkSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C36750265BE3F200F49A49 /* NetworkSession.swift */; };
 		57FD0EA22637888400DC5226 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EA12637888400DC5226 /* Box.swift */; };
 		57FD0EAA2637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */; };
 		57FD0EAF2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */; };
@@ -84,6 +85,7 @@
 		57ADCDB7263768F4007474A8 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
 		57ADCDC626376E29007474A8 /* MusicDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataParser.swift; sourceTree = "<group>"; };
 		57ADCDCE26377B7A007474A8 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		57C36750265BE3F200F49A49 /* NetworkSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSession.swift; sourceTree = "<group>"; };
 		57FD0EA12637888400DC5226 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		57FD0EA92637943D00DC5226 /* ShowMusicViewController+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UITableViewDataSource.swift"; sourceTree = "<group>"; };
 		57FD0EAE2637947700DC5226 /* ShowMusicViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShowMusicViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		57ADCDD626377D94007474A8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				57C36750265BE3F200F49A49 /* NetworkSession.swift */,
 				57ADCDA026375D74007474A8 /* MusicDataProvider.swift */,
 				57ADCDC626376E29007474A8 /* MusicDataParser.swift */,
 				57FD0EBD2637AC5000DC5226 /* ImageProvider.swift */,
@@ -554,6 +557,7 @@
 				57ADCDC726376E29007474A8 /* MusicDataParser.swift in Sources */,
 				575FE504263D8D560021F57F /* ShowMusicViewController+UITableViewDataSourcePrefetching.swift in Sources */,
 				57FD0EB42637957100DC5226 /* ShowMusicCollectionViewCell.swift in Sources */,
+				57C36751265BE3F200F49A49 /* NetworkSession.swift in Sources */,
 				57FD0EBE2637AC5000DC5226 /* ImageProvider.swift in Sources */,
 				575FE509263D8D890021F57F /* ShowMusicViewController+UICollectionViewDataSourcePrefetching.swift in Sources */,
 				57ADCD91263741ED007474A8 /* ShowMusicViewModel.swift in Sources */,

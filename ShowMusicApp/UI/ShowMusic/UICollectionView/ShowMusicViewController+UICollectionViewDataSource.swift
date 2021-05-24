@@ -26,12 +26,8 @@ extension ShowMusicViewController: UICollectionViewDataSource {
         }
         
         // set album image
-        DispatchQueue.global(qos: .background).async { [weak self] in
-            self?.viewModel?.fetchAlbumImageData(inPlaylist: playlistId, inAlbum: albumId) { image in
-                DispatchQueue.main.async {
-                    cell.setImageView(image: image)
-                }
-            }
+        viewModel?.fetchAlbumImageData(inPlaylist: playlistId, inAlbum: albumId) { image in
+            cell.setImageView(image: image)
         }
                 
         return cell
